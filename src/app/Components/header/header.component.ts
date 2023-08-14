@@ -9,6 +9,8 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  btn : String = "ADD";
+
   @Input() desc : String | undefined;
 
   ngOnInit(): void {
