@@ -1,1 +1,12 @@
-<p>taks-item works!</p>
+<div [ngClass]="{'remind' : task.reminder}"
+ (dblclick)="toggleRemind(task)" *ngFor="let task of tasks" class="container">
+    <div class="task">
+        <div class="text">{{task.text}}</div>
+        <div class="date">{{task.date}}</div>
+        <div class="reminder">{{task.reminder}}</div>
+    </div>
+    <div class="btns">
+        <app-button (click)="onDelete(task)" [text]="delete" color="red" textColor="white"></app-button>
+        <app-button [text]="edit" color="yellow" textColor="black"></app-button>
+    </div>
+</div>
