@@ -7,4 +7,5 @@
 
 .btn:active{
     border: 1px solid black;
+    background-color: blue;
 }
