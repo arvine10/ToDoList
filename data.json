@@ -1,0 +1,20 @@
+{
+    "tasks":[
+        {
+            "id" : 1,
+            "task": "Pick up laundry",
+            "date": "8-16-2023",
+            "reminder": false
+        },
+        {   "id": 2,
+            "task": "Study",
+            "date": "8-16-2023",
+            "reminder": true
+        },
+        {   "id": 3,
+            "task": "Get Groceries",
+            "date": "8-16-2023",
+            "reminder": false
+        }
+    ]
+}

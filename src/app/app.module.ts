@@ -7,6 +7,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { ButtonComponent } from './Components/button/button.component';
 import { TaskComponent } from './Components/task/task.component';
 import { TaksItemComponent } from './Components/taks-item/taks-item.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TaksItemComponent } from './Components/taks-item/taks-item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
