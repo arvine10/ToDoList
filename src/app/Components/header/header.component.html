@@ -1,4 +1,5 @@
 <h3 class="header">
     <h2>{{desc}}</h2>
-    <app-button [text]="btn" color="green" textColor="white"></app-button>
+    <app-button (click)="toggleBtn()" [text]="text" [color]="color" textColor="white"></app-button>
 </h3>
+

@@ -7,10 +7,22 @@
       "reminder": true
     },
     {
-      "id": 2,
-      "text": "Study",
-      "date": "8-16-2023",
-      "reminder": true
+      "text": "do something",
+      "date": "7-12-23",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "do something",
+      "date": "7-12-23",
+      "reminder": null,
+      "id": 6
+    },
+    {
+      "text": "do something",
+      "date": "7-12-23",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
