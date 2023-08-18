@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+        <div class="task">
+            <label for="">Task:</label>
+            <input formControlName="text" type="text" >
+        </div>
+        <div class="date">
+            <label for="">Date:</label>
+            <input formControlName="date" type="text" >
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>

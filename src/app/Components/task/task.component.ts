@@ -39,10 +39,19 @@ export class TaskComponent implements OnInit {
     });
   }
 
+  updateRemind(task : Task){
+    task.reminder = !task.reminder;
+    this.taskService.updateTask(task).subscribe();
+  }
+
+  updateTask(task : Task){
+    console.log(task);
+    this.taskService.updateTask(task).subscribe();
+  }
+
   submitTask(){
     if (this.form.valid){
       let task = this.form.value as any;
-      console.log(typeof task);
       this.taskService.addTask(task).subscribe(()=>{
         this.tasks?.push(task);
 
@@ -50,7 +59,7 @@ export class TaskComponent implements OnInit {
 
         this.taskService.getTasks().subscribe((tasks)=>{
           this.tasks = tasks;
-        })
+        });
       });
     }
 

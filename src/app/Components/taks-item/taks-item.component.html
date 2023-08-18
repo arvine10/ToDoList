@@ -6,6 +6,6 @@
     </div>
     <div class="btns">
         <app-button (click)="onDelete(task)" [text]="delete" color="red" textColor="white"></app-button>
-        <app-button [text]="edit" color="yellow" textColor="black"></app-button>
+        <app-button (click)="update(task)" [text]="edit" color="yellow" textColor="black"></app-button>
     </div>
 </div>
