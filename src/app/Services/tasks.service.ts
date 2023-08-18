@@ -45,6 +45,10 @@ export class TasksService {
     return this.http.post<Task>(environment.url,task,{headers});
   }
 
+  updateTask(task: Task):Observable<any>{
+    return this.http.put<Task>(`${environment.url}/${task.id}`,task);
+  }
+
   
   
 
