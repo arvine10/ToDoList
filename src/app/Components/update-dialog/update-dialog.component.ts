@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class UpdateDialogComponent implements OnInit {
   constructor( private dialogRef: MatDialogRef<UpdateDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) private data: any, private fb: FormBuilder,) { 
+    @Inject(MAT_DIALOG_DATA) private data: any) { 
     }
 
     myForm = new FormGroup({
@@ -24,14 +24,9 @@ export class UpdateDialogComponent implements OnInit {
     submitForm(){
       this.data.text = this.myForm.value.text;
       this.data.date = this.myForm.value.date;
-
       this.dialogRef.close(this.data);
-      // send this back to task-item
-      // send from task-item to task
-      // update it from there
-
-      // how to send data from diolg back to where it was opened
     }
+    
 
   ngOnInit(): void {
     console.log(this.data);
