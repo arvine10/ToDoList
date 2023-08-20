@@ -26,13 +26,13 @@ export class TaksItemComponent implements OnInit {
   }
 
   update(task: Task){
-    const dialogContent = this.dialog.open(UpdateDialogComponent, {
+    const diolgRef = this.dialog.open(UpdateDialogComponent, {
       width: '300px',
       height: '300px',
       data : task
     });
 
-    dialogContent.afterClosed().subscribe(result => {
+    diolgRef.afterClosed().subscribe(result => {
       if (result)this.updateTask.emit(result);
     });
   }
